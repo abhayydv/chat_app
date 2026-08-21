@@ -21,9 +21,7 @@ io.on("connection", (socket) => {
 });
 
 app.get("/",(req,res) => {
-    console.log(path.resolve("/public/page.html"));
-    console.log(path.resolve("./public/page.html"));
-    return res.sendFile(path.resolve("/public/page.html"));
+    return res.sendFile(path.resolve("./public/page.html"));
 });
 
 const port = 9090;
